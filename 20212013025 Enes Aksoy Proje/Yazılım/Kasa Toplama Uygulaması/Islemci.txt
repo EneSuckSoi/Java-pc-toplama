@@ -1,0 +1,5 @@
+AMD,Ryzen 5 5600G,3.90 GHz,6,140,
+Intel,i3-10100F,3.60 GHz,4,80,
+Intel,i5-10400F,4.30 GHz,4,130,
+Intel,i7-11700K,5.0 GHz,8,235,
+AMD,Ryzen 5 1600 AF,3.20 GHz,6,100,

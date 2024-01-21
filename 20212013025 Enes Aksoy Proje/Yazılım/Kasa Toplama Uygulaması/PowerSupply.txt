@@ -1,0 +1,6 @@
+Thermaltake,600W,66,
+Corsair,850W,135,
+Thermaltake,500W,40,
+ASUS,850W,140,
+EVGA,600W,80,
+Power Supply,650W,54,

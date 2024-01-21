@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #039E00; -fx-border-width: 8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFXMLController">
+   <children>
+      <Button fx:id="yoneticiGirisi" alignment="CENTER" layoutX="1180.0" layoutY="761.0" mnemonicParsing="false" onAction="#btnYoneticiGirisiClicked" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #FF0000; -fx-text-fill: #FFFFFF;" text="Yönetici Girişi" />
+      <Button alignment="CENTER" layoutX="169.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnEkranKartlariClicked" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #039E00;" text="Ekran Kartları" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="991.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnRAMlerClicked" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #039E00;" text="RAM'ler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="1157.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnSepetiGoruntule" style="-fx-background-color: #ff7a0d;" text="Sepeti Görüntüle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="612.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnIslemcilerClicked" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #039E00;" text="İşlemciler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="179.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnAnakartlarClicked" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #039E00;" text="Anakartlar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="612.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnDepolamaClicked" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #039E00;" text="Depolama" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="991.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnPowerSupplyClicked" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #039E00;" text="Power Supply" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="1180.0" layoutY="742.0" prefHeight="19.0" prefWidth="106.0" text="Yönetici misiniz?">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="14.0" style="-fx-text-fill: #FF0004;" text="Kasa Toplama Uygulaması">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="247.0" fitWidth="315.0" layoutX="103.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/EkranKarti.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="203.0" fitWidth="183.0" layoutX="582.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/işlemci.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="283.0" layoutX="912.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/ram.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="1116.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/sepet.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="192.0" fitWidth="277.0" layoutX="93.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/anakart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="264.0" layoutX="542.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/ssd.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="123.0" fitWidth="176.0" layoutX="521.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/sata%20ssd.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="176.0" fitWidth="125.0" layoutX="689.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/hdd.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="228.0" fitWidth="322.0" layoutX="915.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/powersupply.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

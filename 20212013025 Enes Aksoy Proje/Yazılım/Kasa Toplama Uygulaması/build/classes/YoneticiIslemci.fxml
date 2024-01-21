@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #940002; -fx-border-width: 8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="YoneticiIslemciController">
+   <children>
+      <Label layoutX="509.0" layoutY="14.0" text="Yönetici Menüsü" textFill="RED">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="islemciTableView" editable="true" layoutX="21.0" layoutY="156.0" prefHeight="515.0" prefWidth="1258.0">
+        <columns>
+          <TableColumn fx:id="markaColumn" onEditCommit="#onEditMarka" prefWidth="75.0" text="Marka" />
+          <TableColumn fx:id="modelColumn" onEditCommit="#onEditModel" prefWidth="75.0" text="Model" />
+            <TableColumn fx:id="gigaHertzColumn" onEditCommit="#onEditGigaHertz" prefWidth="75.0" text="GHz" />
+            <TableColumn fx:id="cekirdekSayisiColumn" onEditCommit="#onEditCekirdekSayisi" prefWidth="75.0" text="Çekirdek Sayısı" />
+            <TableColumn fx:id="fiyatColumn" onEditCommit="#onEditFiyat" prefWidth="75.0" text="Fiyat ($)" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="569.0" layoutY="59.0" text="İşlemci İşlemleri" textFill="#0009ff">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="markaTextField" layoutX="36.0" layoutY="697.0" prefHeight="25.0" prefWidth="231.0" promptText="Marka" />
+      <TextField fx:id="modelTextField" layoutX="277.0" layoutY="697.0" prefHeight="25.0" prefWidth="231.0" promptText="Model" />
+      <TextField fx:id="gigaHertzTextField" layoutX="515.0" layoutY="697.0" prefHeight="25.0" prefWidth="231.0" promptText="GHz" />
+      <TextField fx:id="fiyatTextField" layoutX="993.0" layoutY="697.0" prefHeight="25.0" prefWidth="231.0" promptText="Fiyat" />
+      <Button layoutX="1246.0" layoutY="739.0" mnemonicParsing="false" onAction="#btnSilClicked" text="Sil" />
+      <Button layoutX="1241.0" layoutY="697.0" mnemonicParsing="false" onAction="#btnEkleClicked" text="Ekle" />
+      <Button fx:id="btnKaydet" disable="true" layoutX="1188.0" layoutY="739.0" mnemonicParsing="false" onAction="#btnKaydetClicked" text="Kaydet" />
+      <TextField fx:id="cekirdekSayisiTextField" layoutX="752.0" layoutY="697.0" prefHeight="25.0" prefWidth="231.0" promptText="Çekirdek Sayısı" />
+      <Button layoutX="1108.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnGeriDonClicked" prefHeight="58.0" prefWidth="160.0" style="-fx-background-color: #FFFFFF;" text="Geri Dön" textFill="RED" underline="true">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="53.0" layoutX="1252.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/geri%20dön.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="29.0" layoutX="22.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/i%20icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="121.0" text="İstediğiniz değeri değiştirmek için değere çift tıklayabilirsiniz.">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

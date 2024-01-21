@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="875.0" style="-fx-border-color: #FF7A0D; -fx-border-width: 8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SepetController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="173.0" style="-fx-border-color: #FF7A0D; -fx-border-radius: 10; -fx-border-width: 5;" text="Sepetim" textFill="#ff7a0d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="752.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnAnaMenuyeDonClicked" text="Ana Menüye Dön" />
+      <Button layoutX="624.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnSepettenKaldir" style="-fx-background-color: #CC8437; -fx-border-color: #000000;" text="Sepetten Kaldır" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="750.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnSepetiOnayla" style="-fx-background-color: #54B84B; -fx-border-color: #000000;" text="Sepeti Onayla" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnKaydet" layoutX="429.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnKaydetClicked" style="-fx-background-color: #5CC5CC; -fx-border-color: #000000;" text="Kaydet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TableView fx:id="sepetTableView" layoutX="56.0" layoutY="116.0" prefHeight="247.0" prefWidth="759.0">
+        <columns>
+          <TableColumn fx:id="markaColumn" prefWidth="156.0" text="Marka" />
+          <TableColumn fx:id="ozelliklerColumn" prefWidth="472.0" text="Özellikler" />
+            <TableColumn fx:id="fiyatColumn" prefWidth="130.0" text="Fiyat ($)" />
+        </columns>
+      </TableView>
+      <Button layoutX="504.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnSepetiTemizle" style="-fx-background-color: #CC4548; -fx-border-color: #000000;" text="Sepeti Temizle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="sepetToplamiLabel" alignment="CENTER" layoutX="686.0" layoutY="378.0" prefHeight="19.0" prefWidth="83.0" style="-fx-border-color: #61C8FF; -fx-border-width: 4; -fx-border-radius: 10;">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="587.0" layoutY="380.0" text="Sepet Toplamı:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="siparisLabel" layoutX="56.0" layoutY="379.0" prefHeight="57.0" prefWidth="495.0" style="-fx-text-fill: #FF0000;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

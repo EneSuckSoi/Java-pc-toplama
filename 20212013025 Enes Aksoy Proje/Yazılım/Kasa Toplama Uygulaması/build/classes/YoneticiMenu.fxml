@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #0f4d17; -fx-border-width: 8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="YoneticiMenuController">
+   <children>
+      <Label layoutX="206.0" layoutY="28.0" text="Yönetici Menüsü" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="522.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnGeriDonClicked" style="-fx-text-fill: #FFFFFF; -fx-background-color: #0f4d17;" text="Geri Dön" />
+      <Button layoutX="61.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnEkranKartiClicked" style="-fx-background-color: #0f4d17; -fx-text-fill: #FFFFFF;" text="Ekran Kartı" textFill="#0f4d17" />
+      <Button layoutX="454.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnRAMClicked" style="-fx-background-color: #0f4d17; -fx-text-fill: #FFFFFF;" text="RAM" />
+      <Button layoutX="273.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnIslemciClicked" style="-fx-background-color: #0f4d17; -fx-text-fill: #FFFFFF;" text="İşlemci" />
+      <Button layoutX="69.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnAnakartClicked" style="-fx-background-color: #0f4d17; -fx-text-fill: #FFFFFF;" text="Anakart" />
+      <Button layoutX="265.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnDepolamaClicked" style="-fx-background-color: #0f4d17; -fx-text-fill: #FFFFFF;" text="Depolama" />
+      <Button layoutX="437.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnPowerSupplyClicked" style="-fx-background-color: #0f4d17; -fx-text-fill: #FFFFFF;" text="Power Supply" />
+      <Label layoutX="97.0" layoutY="80.0" text="Düzenleme yapmak istediğiniz bilgisayar parçasını seçiniz." textFill="#0200ff">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="120.0" layoutX="40.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/ekrankartıicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="95.0" layoutX="258.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/işlemciicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="89.0" layoutX="437.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/ramicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="59.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/anakarticon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="73.0" layoutX="270.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/diskicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="434.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/psuicon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
